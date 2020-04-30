@@ -34,7 +34,7 @@ export const StyledHeroImage = styled.div`
 
     h1 {
       font-family: 'Abel', sans-serif;
-      font-size: 48px;
+      font-size: 24px;
       color: #fff;
 
       @media screen and (max-width: 720px) {
