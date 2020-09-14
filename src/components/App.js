@@ -1,14 +1,22 @@
-import React from 'react';
-import Home from './Home.js';
-import Header from './elements/Header.js';
+import React from "react";
+import { Router } from "@reach/router";
 
-import { GlobalStyle } from './styles/GlobalStyle';
+import Home from "./Home.js";
+import Header from "./elements/Header.js";
+import NotFound from "./NotFound";
+import Movie from "./Movie";
+
+import { GlobalStyle } from "./styles/GlobalStyle";
 
 const App = () => (
-    <div>
-      <Header />
-      <Home />
-      <GlobalStyle/>
-    </div>
+  <>
+    <Header />
+    <Router>
+      <Home path="/" />
+      <Movie path="/:movieId" />
+      <NotFound default />
+    </Router>
+    <GlobalStyle />
+  </>
 );
 export default App;

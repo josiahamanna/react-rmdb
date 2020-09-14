@@ -3,7 +3,7 @@
 // Read more about the API here: https://developers.themoviedb.org/
 
 const API_URL = "https://api.themoviedb.org/3/";
-const API_KEY = "1ae0e71f72b0c568e6488d51df85473f";
+const API_KEY = "4ebe7d3197bc052964815687e12c25fe";
 const SEARCH_BASE_URL = `${API_URL}search/movie?api_key=${API_KEY}&query=`;
 const POPULAR_BASE_URL = `${API_URL}movie/popular?api_key=${API_KEY}`;
 

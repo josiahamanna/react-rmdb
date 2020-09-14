@@ -1,13 +1,18 @@
-import React from 'react';
-import { StyledMovieThumb } from '../styles/StyledMovieThumb';
+import React from "react";
+import { Link } from "@reach/router";
 
+import { StyledMovieThumb } from "../styles/StyledMovieThumb";
 
-const MovieThumb = ({image, movieId, clickable}) => (
-    <StyledMovieThumb>
-    {clickable ?
-     <img clickable={image} src={image} alt="moviethumb"/> :
-    <img src={image} alt="moviethumb"/>}
-    </StyledMovieThumb>
+const MovieThumb = ({ image, movieId, clickable }) => (
+  <StyledMovieThumb>
+    {clickable ? (
+      <Link to={`/${movieId}`}>
+        <img clickable={image} src={image} alt="moviethumb" />
+      </Link>
+    ) : (
+      <img src={image} alt="moviethumb" />
+    )}
+  </StyledMovieThumb>
 );
 
 export default MovieThumb;
