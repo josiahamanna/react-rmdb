@@ -36,7 +36,8 @@ const Home = () => {
   const searchMovies = (search) => {
     const endpoint = search ? SEARCH_BASE_URL + search : POPULAR_BASE_URL;
     setSearchTerm(search);
-    console.log("endpoint", endpoint);
+      console.log("endpoint", endpoint);
+      
     fetchMovies(endpoint);
   };
   const loadMoreMovies = () => {

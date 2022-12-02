@@ -16,7 +16,7 @@ const App = () => (
       <Movie path="/:movieId" />
       <NotFound default />
     </Router>
-    <GlobalStyle />
+      <GlobalStyle />
   </>
 );
 export default App;
