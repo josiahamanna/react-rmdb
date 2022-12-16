@@ -10,7 +10,7 @@ import { GlobalStyle } from "./styles/GlobalStyle";
 
 const App = () => (
   <>
-    {/* <Header /> */}
+    <Header />
     <Router>
       <Home path="/" />
       <Movie path="/:movieId" />
