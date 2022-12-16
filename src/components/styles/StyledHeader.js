@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledHeader = styled.div`
   background: #1c1c1c;
@@ -8,7 +8,7 @@ export const StyledHeader = styled.div`
   .header-content {
     max-width: 1280px;
     min-height: 120px;
-    padding: 20px 0px;
+    padding: 20px 20px;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -20,7 +20,7 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledRMDBLogo = styled.img`
-  width: 250px;
+  width: 50px;
   margin-top: 20px;
 
   @media screen and (max-width: 500px) {

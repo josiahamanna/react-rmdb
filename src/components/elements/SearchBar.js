@@ -1,6 +1,9 @@
 import React, { useState, useRef } from "react";
-import fontAwesome from "react-fontawesome";
-import { StyledSearchBar, StyledSearchBarContent } from "../styles/StyledSearchBar.js";
+import FontAwesome from "react-fontawesome";
+import {
+  StyledSearchBar,
+  StyledSearchBarContent,
+} from "../styles/StyledSearchBar.js";
 
 const SearchBar = ({ callback }) => {
   const [state, setState] = useState("");
@@ -20,8 +23,13 @@ const SearchBar = ({ callback }) => {
   return (
     <StyledSearchBar>
       <StyledSearchBarContent>
-        <fontAwesome className="fa-search" name="search" size="2x" />
-        <input type="text" placeholder="Search movie" onChange={doSearch} value={state} />
+        <FontAwesome className="fa-search" name="search" size="2x" />
+        <input
+          type="text"
+          placeholder="Search movie"
+          onChange={doSearch}
+          value={state}
+        />
       </StyledSearchBarContent>
     </StyledSearchBar>
   );
